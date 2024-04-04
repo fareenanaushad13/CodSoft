@@ -1,0 +1,139 @@
+body {
+  background-color: #141414;
+  font-family: Arial, sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+.calculator {
+  width: 220px;
+  height: 280px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: gray;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#display {
+  width: calc(100% - 20px);
+  margin-bottom: 10px;
+  padding: 5px;
+  background-color: #e9ecef;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 20px;
+  text-align: right;
+}
+
+.control-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.control-buttons button {
+  padding: 5px 10px;
+  background-color: #343a40;
+  border: none;
+  cursor: pointer;
+}
+
+.control-buttons button:hover {
+  background-color: #ccc;
+}
+
+/* change-color */
+
+.box-container {
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  width: 20%;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.change {
+  margin-top: 14px;
+  margin-bottom: 0;
+  font-size: 10px;
+}
+
+.change-color {
+  position: absolute;
+  left: 13%;
+  top: 13px;
+  transform: translateX(-50%);
+  padding: 2px 7px;
+  background-color: #343a40;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 15px;
+}
+
+.change-color:hover {
+  background-color: #495057;
+}
+
+/* button */
+
+.additional-functions button {
+  font-size: 10px;
+  padding: 5px;
+  margin: 3px;
+  width: calc(25% - 10px);
+  border: none;
+  cursor: pointer;
+  background-color: #343a40;
+  color: white;
+}
+
+.buttons button {
+  padding: 5px;
+  margin: 3px;
+  font-size: 12px;
+  width: calc(25% - 10px);
+  border: none;
+  cursor: pointer;
+  background-color: #343a40;
+  color: white;
+}
+
+.additional-functions button:hover,
+.buttons button:hover {
+  background-color: #495057;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.operations {
+  width: 100%;
+}
+
+.operations button {
+  width: calc(30% - 10px);
+  margin-right: 6px;
+  border-radius: 10px;
+}
+
+.numbers {
+  width: 100%;
+}
+
+.numbers button {
+  width: calc(30% - 10px);
+  border-radius: 2px;
+}

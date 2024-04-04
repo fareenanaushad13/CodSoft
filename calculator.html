@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Indian Calculator</title>
+    <link rel="stylesheet" href="calculator.css" />
+  </head>
+  <body>
+    <div class="calculator">
+      <input type="text" id="display" readonly />
+      <div class="control-buttons">
+        <button class="on-off" onclick="toggleCalculator()">On/Off</button>
+        <button class="clear" onclick="clearDisplay()">AC</button>
+      </div>
+      <div class="additional-functions">
+        <button onclick="appendToDisplay('Math.sin(')">sin</button>
+        <button onclick="appendToDisplay('Math.cos(')">cos</button>
+        <button onclick="appendToDisplay('Math.tan(')">tan</button>
+        <button class="delete" onclick="deleteLastChar()">C</button>
+        <button onclick="appendToDisplay('Math.cbrt(')">∛</button>
+        <button onclick="appendToDisplay('Math.floor(')">⌊x⌋</button>
+        <button onclick="appendToDisplay('Math.ceil(')">⌈x⌉</button>
+        <button onclick="appendToDisplay('Math.round(')">round</button>
+        <button onclick="appendToDisplay('Math.log10(')">log</button>
+        <button onclick="appendToDisplay('Math.exp(')">exp</button>
+        <button onclick="appendToDisplay('Math.PI')">π</button>
+        <button onclick="appendToDisplay('Math.E')">e</button>
+      </div>
+      <div class="buttons">
+        <div class="numbers">
+          <button onclick="appendToDisplay('7')">7</button>
+          <button onclick="appendToDisplay('8')">8</button>
+          <button onclick="appendToDisplay('9')">9</button>
+          <button onclick="appendToDisplay('4')">4</button>
+          <button onclick="appendToDisplay('5')">5</button>
+          <button onclick="appendToDisplay('6')">6</button>
+          <button onclick="appendToDisplay('1')">1</button>
+          <button onclick="appendToDisplay('2')">2</button>
+          <button onclick="appendToDisplay('3')">3</button>
+          <button onclick="appendToDisplay('0')">0</button>
+          <button onclick="appendToDisplay('00')">00</button>
+          <button onclick="appendToDisplay('.')">.</button>
+        </div>
+        <div class="operations">
+          <button onclick="appendToDisplay('+')">+</button>
+          <button onclick="appendToDisplay('-')">-</button>
+          <button onclick="appendToDisplay('*')">x</button>
+          <button onclick="appendToDisplay('/')">/</button>
+          <button onclick="appendToDisplay('%')">%</button>
+          <button onclick="appendToDisplay('Math.abs(')">|x|</button>
+          <button onclick="appendToDisplay('**')">^</button>
+          <button onclick="appendToDisplay('Math.pow(')">^2</button>
+          <button onclick="appendToDisplay('Math.sqrt(')">√</button>
+          <button onclick="calculate()">=</button>
+        </div>
+      </div>
+    </div>
+    <div class="box-container">
+      <button class="change-color" onclick="changeColors()">
+        Change Colors
+      </button>
+      <p class="change">
+        Give your calculator a fresh new look! Click the button above to refresh
+        its appearance and add a splash of color.
+      </p>
+    </div>
+
+    <script src="calculator.js"></script>
+  </body>
+</html>
